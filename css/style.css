@@ -1,0 +1,28 @@
+.dot {
+	width: 40px; 
+	height: 80px;
+	background-color: red;
+	border-radius: 20px;
+	transform:rotate(0deg);
+	transition-property: all;
+	transition-duration: 2s;
+	animation-name: ryong;
+	animation-duration: 2s;
+	animation-play-state: paused;
+}
+
+.dot:hover {
+	transform:rotate(2160deg);
+	animation-play-state: running;
+}
+
+@keyframes ryong {
+	0% { 
+		width: 40px;
+		height: 80px;
+	}
+	100% {
+		width: 5px;
+		height: 10px;
+	}
+}
